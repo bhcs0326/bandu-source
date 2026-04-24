@@ -1,0 +1,17 @@
+Bandu 安装说明
+
+该安装程序用于 Bandu 的非官方衍生版本，本版本基于 HKUDS/DeepTutor 构建。
+发布者：于大治
+联系方式：36034729@qq.com
+
+重要说明：
+- 本版本与 HKUDS、Data Intelligence Lab、香港大学均无官方关联，也未获得其认可或赞助。
+- 上游衍生代码仍受 Apache License 2.0 约束。
+- Apache License 2.0 不授予商标权，请勿将本版本表述为官方 DeepTutor 发行版。
+- 重新分发时，请保留 LICENSE、NOTICE、MODIFICATIONS.md 和 THIRD_PARTY_LICENSES.md。
+- 请勿打包密钥、私有数据、本地 .env 文件、运行缓存、日志或专有文档。
+
+在对外发布前，请确认：
+- 所有打包的 logo、图标、字体、截图和示例素材均可再分发；
+- 第三方依赖许可与你的分发方式兼容；
+- 外部模型或 API 的使用符合对应服务条款。

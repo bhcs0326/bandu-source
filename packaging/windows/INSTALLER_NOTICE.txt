@@ -1,0 +1,18 @@
+Bandu Setup Notice
+
+This installer is intended for a non-official derivative build of Bandu based on HKUDS/DeepTutor.
+
+Publisher: 于大治
+Contact: 36034729@qq.com
+
+Important:
+- This build is not affiliated with, endorsed by, or sponsored by HKUDS, Data Intelligence Lab, or The University of Hong Kong.
+- Upstream-derived code remains subject to the Apache License 2.0.
+- Apache License 2.0 does not grant trademark rights. Do not present this build as an official DeepTutor release.
+- Keep LICENSE, NOTICE, MODIFICATIONS.md, and THIRD_PARTY_LICENSES.md with any redistributed build.
+- Do not bundle secrets, private data, local .env files, runtime caches, logs, or proprietary documents.
+
+Before external release, verify:
+- bundled logos, icons, fonts, screenshots, and examples are redistributable;
+- third-party package licenses remain compatible with your intended distribution;
+- external model/API usage complies with the relevant service terms.

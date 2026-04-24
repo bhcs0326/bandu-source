@@ -1,0 +1,27 @@
+Derivative Workspace Notice
+
+This repository contains software derived from HKUDS/DeepTutor.
+
+Upstream project:
+- Project: HKUDS/DeepTutor
+- Source: https://github.com/HKUDS/DeepTutor
+- License: Apache License 2.0
+
+The upstream DeepTutor project is distributed under the Apache License 2.0.
+Original upstream copyright, patent, trademark, and attribution notices remain
+in effect for the corresponding upstream-derived portions of this repository.
+
+This repository is a non-official derivative workspace. It is not affiliated
+with, authorized by, endorsed by, or sponsored by HKUDS, Data Intelligence Lab,
+or The University of Hong Kong.
+
+This repository may include local modifications, packaging changes, branding
+changes, localization changes, deployment adjustments, and other derivative
+work. See `MODIFICATIONS.md` for a summary of derivative changes.
+
+Apache License 2.0 does not grant trademark rights. Product names, trade
+names, logos, service marks, and branding associated with the upstream project
+remain the property of their respective owners except where reasonable and
+customary attribution is required to identify the upstream origin of the work.
+
+For the full upstream license text, see `LICENSE`.
