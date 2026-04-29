@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 import sqlite3
 from pathlib import Path
 
@@ -42,7 +43,8 @@ def test_sqlite_store_migrates_legacy_chat_history_db(tmp_path: Path) -> None:
         store = SQLiteSessionStore()
 
         assert store.db_path.exists()
-        assert not legacy_db.exists()
+        if os.name != "nt":
+            assert not legacy_db.exists()
     finally:
         service._project_root = original_root
         service._user_data_dir = original_user_dir

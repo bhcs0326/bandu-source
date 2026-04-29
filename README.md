@@ -63,6 +63,10 @@ npm run build
 python scripts/start_tour.py
 ```
 
+### Provider auth
+
+Provider auth (`openai-codex` OAuth login; `github-copilot` validates an existing Copilot auth session)
+
 Or follow the local setup guides in:
 
 - `docs/`

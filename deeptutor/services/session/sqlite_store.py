@@ -5,8 +5,10 @@ SQLite-backed unified chat session store.
 from __future__ import annotations
 
 import asyncio
+import gc
 import json
 import os
+import shutil
 import sqlite3
 import time
 import uuid
@@ -73,12 +75,18 @@ class SQLiteSessionStore:
         legacy_path = path_service.project_root / "data" / "chat_history.db"
         if self.db_path.exists() or not legacy_path.exists() or legacy_path == self.db_path:
             return
+        gc.collect()
         try:
             os.replace(legacy_path, self.db_path)
         except OSError:
-            # Fall back to leaving the legacy DB in place if an OS-level move
-            # is not possible; the new DB path will be initialized empty.
-            pass
+            shutil.copy2(legacy_path, self.db_path)
+            for _ in range(10):
+                try:
+                    legacy_path.unlink(missing_ok=True)
+                    break
+                except OSError:
+                    gc.collect()
+                    time.sleep(0.05)
 
     def _initialize(self) -> None:
         with sqlite3.connect(self.db_path) as conn:
